@@ -1,0 +1,37 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: crimson;
+}
+
+header {
+    margin-bottom: 2.3rem;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.8rem;
+}
+
+section .table-of-contents {
+    font-size: 1.2rem;
+    color: indigo;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+    display: none;
+}

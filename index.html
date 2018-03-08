@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Refernce</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Git Reference</h1>
+    </header>
+    <main class="container">
+        <section>
+            <h3 class="table-of-contents">Информация</h3>
+            <p>
+                <code>git config --global user.name &quot;Your Name&quot;</code><br>
+                <code>git config --global user.email &quot;your_email@gmail.com&quot;</code> - установка имени и электронной почты.
+            </p>
+            <p>
+                <var>.git</var> - каталог git-репозитория.<br>
+                <var>repo.git</var> - чистый репозиторий (не содержащий рабочего каталога), представляющий каталог <var>.git</var><br>
+                <var>.gitignore</var> - файл в котором указывается какие файлы и папки не должны быть проиндексированны для изменений и не закомичены.<br>
+                <var>HEAD</var> - указатель на текущий коммит в текущей ветке.<br>
+                <var>origin</var> - имя удалённого репозитория по умолчанию.<br>
+                <var>master</var> - имя ветки по умолчанию<br>
+            </p>
+        </section>
+        <section>
+            <h3 class="table-of-contents">Основное</h3>
+            <p>
+                <code>git init</code> - создание репозитория.<br>
+                <code>git add file</code> - добавление файла в Staging Area.<br>
+                <code>git add .</code> - добавление всех файлов в Staging Area.<br>
+                <code>git commit -m &quot;Some comment&quot;</code> - коммит изменений.<br>
+                <code>git status</code> - состояние репозитория.<br>
+                <code>git log</code> - история коммитов.<br>
+                <code>git log --graph --all</code> - история коммитов с графическим отображением веток.<br>
+                <code>git checkout hash-коммита</code> - откат изменений к указанному коммиту.<br>
+                <code>git checkout branchName</code> - перейти к последнему коммиту, указанной ветки.<br>
+                <code>git checkout file</code> - переключиться на последний коммит указанного файла в репозитории (отмена непроиндексированных изменений в рабочем каталоге).<br>
+                <code>git reset HEAD file</code> - отменяет проиндексированные изменения для указанного файла в Staging Area.<br>
+            </p>
+        </section>
+        <section>
+            <h3 class="table-of-contents">Ветки</h3>
+            <p>
+                <code>git branch newBranch</code> - создание новой ветки.<br>
+                <code>git checkout branchName</code> - переключение на указзанную ветку.<br>
+                <code>git checkout -b newBranch</code> - создание ветки и переключение на неё.<br>
+                <code>git branch</code> - список локальных веток.<br>
+                <code>git branch -a</code> - список всех веток (локальных и удалённых).<br>
+                <code>git merge branchName</code> - слить указанную ветку в текущую ветку.<br>
+                <code>git rebase branchName</code> - перебазирование указанной ветки на текущую ветку.<br>
+            </p>
+        </section>
+        <section>
+            <h3 class="table-of-contents">Удалённые репозитории</h3>
+            <p>
+                <code>git clone URL-репозитория [cloned-repo]</code> - клонирование удалённого репозитория и сохранение под указанным именем cloned-repo.<br>
+                <code>git remote add origin URL-репозитория</code> - добавление удалённого репозитория под именем origin.<br>
+                <code>git remote</code> - список удалённых репозиториев.<br>
+                <code>git remote show origin</code> - информация об удалённом репозитории.<br>
+                <code>git push origin branchName</code> - отправка изменений на удалённый репозиторий.<br>
+                <code>git pull origin branchName</code> - получение изменений с удалённой ветки и слияние изменений в локальную ветку.<br>
+                <code>git fetch origin branchName</code> - получение изменений с удалённой ветки (без слияния в локальную ветку).<br>
+            </p>
+        </section>
+        
+    </main>
+    <footer class="text-center">
+        <small class="text-info">&copy; Roman Yusupov 2018</small>
+    </footer>
+
+    <a href="#" id="Go_Top" class="gotop">
+        <img src="img/gotop.png" alt="Наверх" title="Наверх">
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/gotop.js"></script>
+</body>
+</html>
