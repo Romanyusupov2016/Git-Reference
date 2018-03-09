@@ -21,9 +21,18 @@
                 <code>git config --global user.email &quot;your_email@gmail.com&quot;</code> - установка имени и электронной почты.
             </p>
             <p>
+                <code>git config --system</code> - настройки на уровне системы.<br>
+                <code>git congig --global</code> - настройки на уровне пользователя.<br>
+                <code>git config</code> - настройки на уровне проекта.<br>
+                <code>git config --list</code> - cписок установленных настроек git.<br>
+                <code>git help</code> - справка по командам git.<br>
+                <code>git help command</code> - информация по указанной команде.<br>
+            </p>
+            <p>
                 <var>.git</var> - каталог git-репозитория.<br>
                 <var>repo.git</var> - чистый репозиторий (не содержащий рабочего каталога), представляющий каталог <var>.git</var><br>
                 <var>.gitignore</var> - файл в котором указываются файлы и папки, изменения которых не должны быть проиндексированны и не закомичены.<br>
+                <var>.gitconfig</var> - конфигурационный файл git (файл настроек git).<br>
                 <var>HEAD</var> - указатель на текущий коммит в текущей ветке.<br>
                 <var>origin</var> - имя удалённого репозитория по умолчанию.<br>
                 <var>master</var> - имя ветки по умолчанию<br>
@@ -36,6 +45,7 @@
                 <code>git add file</code> - добавление файла в Staging Area.<br>
                 <code>git add .</code> - добавление всех файлов в Staging Area.<br>
                 <code>git commit -m &quot;Some comment&quot;</code> - коммит изменений.<br>
+                <code>git commit --amend -m &quot;Some comment&quot;</code> -добавление изменений в последний коммит.<br>
                 <code>git status</code> - состояние репозитория.<br>
                 <code>git log</code> - история коммитов.<br>
                 <code>git log --graph --all</code> - история коммитов с графическим отображением веток.<br>
@@ -43,6 +53,11 @@
                 <code>git checkout branchName</code> - перейти к последнему коммиту, указанной ветки.<br>
                 <code>git checkout file</code> - переключиться на последний коммит указанного файла в репозитории (отмена непроиндексированных изменений в рабочем каталоге).<br>
                 <code>git reset HEAD file</code> - отменяет проиндексированные изменения для указанного файла в Staging Area.<br>
+                <code>git diff</code> - разница между изменениями в рабочем каталоге и репозитории.<br>
+                <code>git diff file</code> - разница между изменениями для указанного файла в рабочем каталоге и репозитории.<br>
+                <code>git diff --staged</code> - разница между изменениями в Staging Area и репозитории.<br>
+                <code>git rm file</code> - удаление файла и помещение изменения об удалении в Staging Area.<br>
+                <code>git mv source destination</code> - переименование/перемещение файла и помещение изменения в Staging Area.<br>
             </p>
         </section>
         <section>
