@@ -35,7 +35,7 @@
                 <var>.gitignore</var> - файл указывающий исключения для git (node_mudules/ - для папок).<br>
                 <var>.gitconfig</var> - пользовательский файл конфигурации git (находится в домашней директории пользователя /home/username/).<br>
                 <var>.git/config</var> - локальный файл конфигурации git.<br>
-                <var>HEAD</var> - указатель на текущий коммит в текущей ветке.<br>
+                <var>HEAD</var> - указатель на текущию ветку, текущего коммита.<br>
                 <var>origin</var> - имя удалённого репозитория по умолчанию.<br>
                 <var>master</var> - имя ветки по умолчанию.<br>
             </p>
@@ -47,21 +47,29 @@
                 <code>git add file</code> - добавление файла в Staging Area.<br>
                 <code>git add .</code> - добавление всех файлов в Staging Area.<br>
                 <code>git commit -m &quot;Some comment&quot;</code> - коммит изменений.<br>
-                <code>git commit --amend -m &quot;Some comment&quot;</code> -добавление изменений в последний коммит.<br>
+                <code>git commit --amend -m &quot;Some comment&quot;</code> - добавление изменений в последний коммит.<br>
                 <code>git status</code> - состояние репозитория.<br>
                 <code>git log</code> - история коммитов.<br>
+                <code>git log branchName</code> - история коммитов в указанной ветке.<br>
                 <code>git log --graph --all</code> - история коммитов с графическим отображением веток.<br>
                 <code>git show</code> - информация о текущем коммите.<br>
                 <code>git show hash-коммита</code> - инормация по указанному коммиту.<br>
+                <code>git reflog</code> - история действий в git.</br>
+                <code>git reflog branchName</code> - история действий в указанной ветке.<br>
                 <code>git checkout hash-коммита</code> - откат изменений к указанному коммиту.<br>
                 <code>git checkout branchName</code> - перейти к последнему коммиту, указанной ветки.<br>
                 <code>git checkout HEAD file</code> - переключиться на последний коммит указанного файла в репозитории (отмена непроиндексированных изменений в рабочем каталоге).<br>
                 <code>git reset file</code> - отменяет проиндексированные изменения для указанного файла в Staging Area.<br>
                 <code>git reset</code> - Сброс Staging Area. Отмена всех проиндексированных изменений в Staging Area.<br>
-                <code>git diff</code> - разница между изменениями в рабочем каталоге и репозитории.<br>
+                <code>git diff</code> - разница между изменениями в рабочем каталоге и Staging Area.<br>
+                <code>git diff HEAD</code> - разница между изменениями в рабочем каталоге и репозитории.<br>
                 <code>git diff file</code> - разница между изменениями для указанного файла в рабочем каталоге и репозитории.<br>
                 <code>git diff --staged</code> - разница между изменениями в Staging Area и репозитории.<br>
-                <code>git diff firstBranch secondBranch</code> - показывает разницу содержимого файла в двух различных ветках.<br>
+                <code>git diff firstBranch secondBranch</code> - различие между ветками.<br>
+                <code>git diff hash-коммита-1 hash-коммита-2</code> - различие между коммитами.<br>
+                <code>git tag tagName hash-коммита</code> - маркировка коммита именованным тегом.<br>
+                <code>git tag -d tagMame</code> - удаление тега.<br>
+                <code>git tag</code> - список назначенных(установленных) тегов.<br>
                 <code>git rm</code> - удаление файла и помещение изменения об удалении в Staging Area.<br>
                 <code>git rm -r</code> - удаление каталога и помещение изменения об удалении в Staging Area.<br>
                 <code>git mv</code> - переименование/перемещение файла и помещение изменения в Staging Area.<br>
@@ -74,8 +82,10 @@
                 <code>git checkout branchName</code> - переключение на указзанную ветку.<br>
                 <code>git checkout -b newBranch</code> - создание ветки и переключение на неё.<br>
                 <code>git branch</code> - список локальных веток.<br>
+                <code>git branch -v</code> - список локальных веток и текущий коммит, на который указывает текущая ветка.<br>
                 <code>git branch -a</code> - список всех веток (локальных и удалённых).<br>
                 <code>git branch -d branchName</code> - удаление ветки.<br>
+                <code>git branch -D branchName</code> - удаление не смёрженной(слитой) ветки.<br>
                 <code>git merge branchName</code> - слить указанную ветку в текущую ветку.<br>
                 <code>git rebase branchName</code> - перебазирование указанной ветки на текущую ветку.<br>
             </p>
