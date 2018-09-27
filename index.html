@@ -41,6 +41,12 @@
                 <var>master</var> - имя ветки по умолчанию.<br>
                 <var><a href="https://github.com/FredrikNoren/ungit" target="_blank">Ungit</a></var> - Amazing GUI client for git.<br>
             </p>
+            <p>
+                Аутентификация на github через SSH:<br>
+                1. <code>ssh-keygen</code> - генерация public/private ключей.<br>
+                2. Скопировать содержимое public ключа <var>/home/user/.ssh/id_rsa.pub</var> в поле настроек github - "SSH and GPG keys".<br>
+
+            </p>
         </section>
         <section>
             <h3 class="table-of-contents">Основное</h3>
@@ -104,7 +110,9 @@
                 <code>git clone URL-репозитория [cloned-repo]</code> - клонирование удалённого репозитория и сохранение под указанным именем cloned-repo.<br>
                 <code>git remote add origin URL-репозитория</code> - добавление удалённого репозитория под именем origin.<br>
                 <code>git remote</code> - список удалённых репозиториев.<br>
+                <code>git remote -v</code> - список удалённых репозиториев с подробной информацией.<br>
                 <code>git remote show origin</code> - информация об удалённом репозитории.<br>
+                <code>git remote set-url origin URL</code> - смена URL, добавленного удалённого репозитория.<br>
                 <code>git push origin branchName</code> - отправка изменений на удалённый репозиторий.<br>
                 <code>git pull origin branchName</code> - получение изменений с удалённой ветки и слияние изменений в локальную ветку.<br>
                 <code>git fetch origin branchName</code> - получение изменений с удалённой ветки (без слияния в локальную ветку).<br>
