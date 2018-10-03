@@ -56,6 +56,7 @@
                 <code>git add .</code> - добавление всех файлов в Staging Area.<br>
                 <code>git commit -m &quot;Some comment&quot;</code> - коммит изменений.<br>
                 <code>git commit --amend -m &quot;Some comment&quot;</code> - внести изменение в сообщение/комментарий последнего коммита.<br>
+                <code>git commit --amend</code> - сделать изменения в последнем коммите.<br>
                 <code>git status</code> - состояние репозитория.<br>
                 <code>git log</code> - история коммитов.<br>
                 <code>git log branchName</code> - история коммитов в указанной ветке.<br>
@@ -72,7 +73,9 @@
                 <code>git checkout HEAD file</code> - переключиться на последний коммит указанного файла в репозитории (отмена непроиндексированных изменений в рабочем каталоге).<br>
                 <code>git checkout -- file</code> - отменить изменения в рабочей директории.<br>
                 <code>git reset file</code> - отменяет проиндексированные изменения для указанного файла в Staging Area.<br>
-                <code>git reset</code> - Сброс Staging Area. Отмена всех проиндексированных изменений в Staging Area.<br>
+                <code>git reset</code> - сброс Staging Area. Отмена всех проиндексированных изменений в Staging Area.<br>
+                <code>git reset --hard HEAD~</code> - откат на один коммит назад и удаление последнего коммита.<br>
+                <code>git reset --hard HEAD~n</code> -окат на n-коммитов назад и удаление n-последний коммитов.<br>
                 <code>git diff</code> - разница между изменениями в рабочем каталоге и Staging Area.<br>
                 <code>git diff HEAD</code> - разница между изменениями в рабочем каталоге и репозитории.<br>
                 <code>git diff file</code> - разница между изменениями для указанного файла в рабочем каталоге и репозитории.<br>
