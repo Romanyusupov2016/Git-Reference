@@ -32,7 +32,7 @@
             <p>
                 <var>.git</var> - каталог git-репозитория.<br>
                 <var>repo.git</var> - чистый репозиторий (не содержащий рабочего каталога), представляющий каталог <var>.git</var><br>
-                <var>.gitignore</var> - файл указывающий исключения для git (node_mudules/ - для папок).<br>
+                <var>.gitignore</var> - файл указывающий исключения для git (/node_mudules/ - шаблон для папок).<br>
                 <var>/etc/gitconfig</var> - обще-системный файл конфигурации.<br>
                 <var>/home/user/.gitconfig</var> - пользовательский файл конфигурации.<br>
                 <var>.git/config</var> - локальный файл конфигурации.<br>
@@ -72,7 +72,7 @@
                 <code>git checkout branchName</code> - перейти к последнему коммиту, указанной ветки.<br>
                 <code>git checkout HEAD file</code> - переключиться на последний коммит указанного файла в репозитории (отмена непроиндексированных изменений в рабочем каталоге).<br>
                 <code>git checkout -- file</code> - отменить изменения в рабочей директории.<br>
-                <code>git reset file</code> - отменяет проиндексированные изменения для указанного файла в Staging Area.<br>
+                <code>git reset HEAD file</code> - удаляет изменения для указанного файла из Staging Area.<br>
                 <code>git reset</code> - сброс Staging Area. Отмена всех проиндексированных изменений в Staging Area.<br>
                 <code>git reset --hard HEAD~</code> - откат на один коммит назад и удаление последнего коммита.<br>
                 <code>git reset --hard HEAD~n</code> -окат на n-коммитов назад и удаление n-последний коммитов.<br>
